@@ -1,3 +1,6 @@
+#
+args <- commandArgs(trailingOnly = TRUE)
+
 # Installation of "httr" (for HTTP requests) and "jsonlite" (for JSON management) packages...
 install.packages(c("httr", "jsonlite"))
 
@@ -5,8 +8,11 @@ install.packages(c("httr", "jsonlite"))
 library(httr)
 library(jsonlite)
 
+#
+httpGitHubUserRequest <- paste("https://api.github.com/users/", args[1], sep = "")
+
 # 
-res = GET("https://api.github.com/users/Vicken-Ghoubiguian")
+res = GET(httpGitHubUserRequest)
 
 # Display the result in the console...
 print(res)
