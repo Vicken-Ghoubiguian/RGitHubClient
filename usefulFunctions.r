@@ -10,4 +10,3 @@ get_all_GitHub_emojis <- function(){
   # Display the result in the console...
   print(res)
 }
-
