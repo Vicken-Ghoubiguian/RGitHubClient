@@ -1,9 +1,6 @@
 # Definition of the function to get, extract and return all GitHub emojis...
 get_all_GitHub_emojis <- function(){
   
-  # Installation of "httr" (for HTTP requests), "jsonlite" (for JSON management) and "magick" (for image processing) packages...
-  install.packages(c("httr", "jsonlite", "magick"))
-  
   # Importation of both newly installed packages...
   library(httr)
   library(jsonlite)
@@ -18,3 +15,4 @@ get_all_GitHub_emojis <- function(){
   # Display the result in the console...
   print(res)
 }
+
